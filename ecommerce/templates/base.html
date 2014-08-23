@@ -48,14 +48,16 @@
   <body>
 
   {% include 'navbar.html' %}
+    {% block jumbotron %}
 
-
+    {% endblock %}
     <div class="container">
 
       <!-- Main component for a primary marketing message or call to action -->
       {% block content %}
 
       {% endblock %}
+
       </div> <!-- /container -->
 
 
