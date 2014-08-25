@@ -50,7 +50,7 @@ def update_cart(request, slug):
   new_total = 0.00
   for item in cart.products.all():
     new_total += float(item.price)
-  request.session['items_total'] = cart.products.all.count()
+  request.session['items_total'] = cart.products.count()
   cart.total = new_total
   cart.save()
   return HttpResponseRedirect(reverse("cart"))
