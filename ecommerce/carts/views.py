@@ -54,3 +54,5 @@ def update_cart(request, slug):
   cart.total = new_total
   cart.save()
   return HttpResponseRedirect(reverse("cart"))
+
+# DONE MOST OF IT.
